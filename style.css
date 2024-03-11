@@ -49,11 +49,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: transparent;
     position: relative;
     transition: 0.8s;
     z-index: 5;
     padding-top: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .nav-show {
@@ -66,7 +66,7 @@ header {
     display: inline-flex;
     top: 110px;
     padding: 0 9px;
-    margin-left: 205px;
+    left: 61%;
 }
 
 .nav-link {
@@ -91,14 +91,14 @@ header {
 header:hover {
     opacity: 5;
     background: var(--main-header-background);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .logo {
     display: flex;
     position: relative;
-    margin-left: 0px;
     scale: 140%;
-    margin-bottom: 65%;
+    bottom: 65px;
 }
 
 .logo img {
@@ -110,6 +110,10 @@ header:hover {
     display: flex;
     margin: auto;
     object-position: 90%;
+}
+
+.logo img:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /*──────────────────
@@ -124,7 +128,6 @@ header:hover {
     justify-content: space-evenly;
 }
 
-
 .hero-video video {
     display: block;
     object-fit: cover;
@@ -133,11 +136,9 @@ header:hover {
     width: 100%;
 }
 
-
 .intro {
     text-align: center;
     color: var(--main-fonts-color);
-
 }
 
 .intro p {
@@ -148,6 +149,21 @@ header:hover {
     width: 60%;
     display: inline-block;
     align-items: center;
+}
+
+.intro h1 {
+    opacity: 0.7;
+    color: var(--main-fonts-color);
+    font-size: 80px;
+    object-fit: contain;
+    position: relative;
+    top: -450px;
+    font-weight: bold;
+}
+
+.intro h1:hover {
+    color: var(--main-decor-color);
+    opacity: 1.0;
 }
 
 .intro h3 {
@@ -162,9 +178,28 @@ header:hover {
 .hero-text {
     text-align: center;
     position: relative;
-    top: -600px;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*──────────────────
+    Welome Section
+──────────────────*/
+.welcome-text {
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+}
+
+.welcome-text h2 {
+    color: var(--main-font-color);
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+.welcome-text p {
+    color: var(--main-decor-color);
+
 }
 
 /*──────────────────
@@ -187,83 +222,84 @@ header:hover {
     text-shadow: 0 0 50px var(--main-decor-color);
 }
 
-
 /*──────────────────
       Lessons
 ──────────────────*/
-
-#lessons {
-    margin-top: 100px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.lessons-tabs h3 {
     color: var(--main-fonts-color);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-#lessons h3 {
-    padding-top: 70px;
-}
-
-#lessons p {
-    font-family: var(--main-font-family);
+.lessons-tabs p {
     font-size: 1.2rem;
-    padding: 10px;
-}
-
-.work {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 12px;
-    background: var(--main-decor-color);
-}
-
-
-.card .work-content {
+    color: var(--main-decor-color);
     text-align: center;
-    padding: 10px 5px;
-    font-size: 1rem;
-    color: var(--main-fonts-color);
-    font-family: var(--main-font-family);
-    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 60%;
+    top: 80px;
+    left: 20%;
 }
 
-.card a {
+.container {
+    display: block;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto) 1fr 1fr);
+    align-content: space-between;
+    text-align: center;
+    justify-content: cent;
+    margin-bottom: 120px;
+}
+
+.lessons-tabs h2 {
+    color: var(--main-fonts-color);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50%;
+    font-weight: bolder;
+    padding-bottom: 0px;
+    margin-bottom: 1%;
+    align-items: center;
     text-decoration: none;
 }
 
-.card .work-content:hover {
-    color: white;
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
 
-.card:hover {
-    box-shadow: 0 0 1.5rem gray;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
+.message-section {
+    color: var(--main-fonts-color);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    top: -40px;
+}
 
 /*──────────────────
       Contact
 ──────────────────*/
 
-#contactus {
+.contactus {
     margin: auto;
     padding-bottom: 20px;
-    height: 600px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,11 +307,16 @@ header:hover {
     color: var(--main-fonts-color);
 }
 
-#contactus p {
-    padding: 5px;
+.contactus p {
     text-align: center;
     font-size: 1.2rem;
     font-family: var(--main-font-family);
+}
+
+.contactus h3 {
+    color: var(--main-fonts-color);
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 
