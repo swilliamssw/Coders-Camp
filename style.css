@@ -24,9 +24,8 @@ body,
 main,
 footer {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     overflow-x: hidden;
-    padding-bottom: 1px;
 }
 
 main {
@@ -45,14 +44,12 @@ body {
 header {
     margin: 0 auto;
     width: 100%;
-    height: 10px;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
     transition: 0.8s;
-    z-index: 5;
-    padding-top: 150px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -64,9 +61,9 @@ header {
     list-style: none;
     position: absolute;
     display: inline-flex;
-    top: 110px;
+    top: 100px;
     padding: 0 9px;
-    left: 61%;
+    left: 59%;
 }
 
 .nav-link {
@@ -97,19 +94,16 @@ header:hover {
 .logo {
     display: flex;
     position: relative;
-    scale: 140%;
-    bottom: 65px;
 }
 
 .logo img {
-    height: 180px;
+    height: 220px;
     cursor: pointer;
     border-radius: 50%;
     object-fit: cover;
-    width: 180px;
+    width: 220px;
     display: flex;
-    margin: auto;
-    object-position: 90%;
+
 }
 
 .logo img:hover {
@@ -194,7 +188,7 @@ header:hover {
 .welcome-text h2 {
     color: var(--main-font-color);
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 .welcome-text p {
@@ -289,7 +283,107 @@ header:hover {
     position: relative;
     font-size: 2.5rem;
     font-weight: bold;
-    top: -40px;
+}
+
+/*──────────────────
+    Sign Up Form
+──────────────────*/
+.sign-up-heading h2 {
+    color: teal;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bolder;
+    margin-right: 22px;
+    margin-top: 35px;
+}
+
+.sign-up-heading h3 {
+    color: var(--main-decor-color);
+    font-size: 13px;
+    display: inline-block;
+    font-weight: lighter;
+    border-bottom: 1px solid var(--main-fonts-color);
+    margin-right: 30px;
+}
+
+.sign-up-heading {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 5px;
+    background-color: var(--main-fonts-color);
+    border-radius: 25px;
+}
+
+.sign-up-form {
+    display: inline-block;
+    margin-right: 15px;
+    padding-bottom: 60px;
+}
+
+.sign-up-form p {
+    display: inline-block;
+    font-size: 9.5px;
+    font-weight: bold;
+    color: var(--main-decor-color);
+}
+
+.sign-up-form a {
+    font-size: 9.5px;
+}
+
+.sign-up-form h2 {
+    color: var(--main-fonts-color);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 6px;
+}
+
+.label-heading {
+    color: slategray;
+    font-size: 13px;
+    border-bottom: 1px solid var(--main-fonts-color);
+    float: left;
+    margin-top: 15px;
+}
+
+.sign-up-form label {
+    display: block;
+    position: relative;
+
+}
+
+.terms-condtion p a {
+    font-size: 13px;
+    padding-top: 1px;
+    text-decoration: none;
+    color: var(--main-decor-color);
+    margin-bottom: 10px;
+}
+
+.checkbox-styling {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--main-decor-color);
+    margin-right: 10px;
+    max-width: fit-content;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.form-buttons button {
+    color: var(--main-decor-color);
 }
 
 /*──────────────────
