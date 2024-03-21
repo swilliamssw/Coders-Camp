@@ -58,3 +58,11 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+VanillaTilt.init(document.querySelector(".section"), {
+    max: 25,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".section"));

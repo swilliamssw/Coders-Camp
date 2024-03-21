@@ -294,7 +294,10 @@ header:hover {
     position: relative;
     font-size: 2.5rem;
     font-weight: bold;
+    top: 25px;
 }
+
+
 
 .container .fa-brands {
     background-color: white;
@@ -430,7 +433,60 @@ input[type=password] {
     color: var(--main-fonts-color);
     font-weight: bold;
     font-size: 4rem;
+    text-align: center;
 }
+
+.about-container .section h2 {
+    color: white;
+    padding-bottom: 1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.about-container .section p {
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 10% 0 10%;
+}
+
+.about-container .column {
+    float: none;
+    width: 32%;
+    padding: 1px;
+    padding-bottom: 20px;
+    margin: 0 6px 6px;
+}
+
+.about-container .section {
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.about-container .footer {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about-container .column {
+    border-radius: 22%;
+    background-color: var(--main-fonts-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: translateZ(20px);
+}
+
 
 /*──────────────────
  Contact Us Page
@@ -465,7 +521,7 @@ input[type=password] {
 #top-arrow {
     display: flex;
     position: fixed;
-    left: 90%;
+    left: 95%;
     bottom: 15%;
     z-index: 99;
     border: none;
