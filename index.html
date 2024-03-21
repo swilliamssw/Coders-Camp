@@ -17,6 +17,7 @@
         <!--Nav Bar-->
         <div class="nav-bar">
             <div class="logo">
+                <!--Logo--->
                 <a href="contactus.html"><img src="assets/cc-logo.png" href="index.html" type="logo"></a>
             </div>
             <nav>
@@ -33,6 +34,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!--Hambuger Nav Bar-->
             <div class="hamburger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -58,6 +61,7 @@
         </div>
         <!--Lessons-->
         <section id="lessons-tabs" class="lessons-tabs">
+            <!--Lessons title-->
             <div class="lessons-title">
                 <h3>Lessons</h3>
                 <p>At Coders Camp we offer a range of lessons that are all.</p>
@@ -66,6 +70,7 @@
                     their creativity, with a focus on providing a safe and supportive environment, Coders Camp is a great
                     place to start your childrens coding journey.</p>
             </div>
+            <!--Language Logo-->
             <div class="container">
                 <div class="row">
                     <!--card-->
@@ -74,7 +79,7 @@
                             <h2>HTML</h2>
                         </div>
                         <a href="lessons.html" target="lessons page">
-                            <i class="fa-brands fa-html5 fa-7x fa-fade" style="color: #f0652a;"></i>
+                            <i class="fa-brands fa-html5 fa-7x" style="color: #f0652a;"></i>
                         </a>
                     </div>
                     <div class="column">
@@ -121,14 +126,17 @@
                     <div class="email" style="opacity: 0.4;">
                         <input type="email" placeholder="Enter Email" id="email" name="email" required>
                     </div>
-                    <label class="label-heading" for="password">PASSWORD:</label>
+
+                    <label class="label-heading" for="password">PASSWORD: </label>
                     <div style="opacity: 0.4;">
                         <input type="password" placeholder="Enter Password" id="password" name="password" required>
                     </div>
-                    <label class="label-heading" for="password-repeat">REPEAT PASSWORD:</label>
+
+                    <label class="label-heading" for="password-repeat">REPEAT PASSWORD: </label>
                     <div style="opacity: 0.4;">
                         <input type="password" placeholder="Repeat Password" id="password-repeat" name="password-repeat" required><br>
                     </div>
+
                     <label class="checkbox-styling">
                         <input type="checkbox" checked="checked" name="remember"> Remember me
                     </label>
@@ -142,8 +150,12 @@
                 </div>
             </form>
         </section>
-        <div class="top-button">
-            <button type="button" value="top"><i class="fa-regular fa-arrow-up"></i></button></div>
+
+        <div class="top-arrow">
+            <button onclick="topFunction()" id="top-arrow" title="Go to top">
+                <i class="fa-solid fa-arrow-up fa-beat-fade fa-3x" style="color: #275657;"></i>
+            </button>
+        </div>
     </main>
     <footer class=" copyright">Coders Camp Group © 2024
         <!--social media link-->

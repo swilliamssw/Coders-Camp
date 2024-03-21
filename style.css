@@ -43,7 +43,7 @@ body {
 
 header {
     margin: 0 auto;
-    width: 100%;
+    width: auto;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -110,6 +110,7 @@ header:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+/*-------------INDEX PAGE-----------------*/
 /*──────────────────
        home
 ──────────────────*/
@@ -127,7 +128,10 @@ header:hover {
     object-fit: cover;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .intro {
@@ -193,7 +197,6 @@ header:hover {
 
 .welcome-text p {
     color: var(--main-decor-color);
-
 }
 
 /*──────────────────
@@ -219,25 +222,32 @@ header:hover {
 /*──────────────────
       Lessons
 ──────────────────*/
+#lessons-tabs {
+    background-color: var(--main-fonts-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
 .lessons-tabs h3 {
-    color: var(--main-fonts-color);
+    color: white;
     display: flex;
     justify-content: center;
     position: relative;
     top: 50px;
     font-size: 2.5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .lessons-tabs p {
     font-size: 1.2rem;
-    color: var(--main-decor-color);
+    color: white;
     text-align: center;
     display: flex;
     position: relative;
     justify-content: center;
+    top: 70px;
     width: 60%;
-    top: 80px;
     left: 20%;
 }
 
@@ -249,11 +259,12 @@ header:hover {
     align-content: space-between;
     text-align: center;
     justify-content: cent;
-    margin-bottom: 120px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .lessons-tabs h2 {
-    color: var(--main-fonts-color);
+    color: white;
     text-align: center;
     font-size: 30px;
     margin-top: 50%;
@@ -283,6 +294,17 @@ header:hover {
     position: relative;
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.container .fa-brands {
+    background-color: white;
+    border-radius: 35%;
+    width: 70%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 /*──────────────────
@@ -329,6 +351,7 @@ input[type=password] {
     display: inline-block;
     margin-right: 15px;
     padding-bottom: 60px;
+    cursor: pointer;
 }
 
 .sign-up-form p {
@@ -361,7 +384,6 @@ input[type=password] {
 .sign-up-form label {
     display: block;
     position: relative;
-
 }
 
 .terms-condtion p a {
@@ -386,8 +408,32 @@ input[type=password] {
     color: var(--main-decor-color);
 }
 
+
+
 /*──────────────────
-      Contact
+ About Us Page
+──────────────────*/
+.about-container {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--main-font-family);
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.about-container .header h1 {
+    padding-bottom: 100px;
+    color: var(--main-fonts-color);
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+/*──────────────────
+ Contact Us Page
 ──────────────────*/
 
 .contactus {
@@ -413,6 +459,20 @@ input[type=password] {
     font-weight: bold;
 }
 
+/*────────────────── 
+       Top arrow
+──────────────────*/
+#top-arrow {
+    display: flex;
+    position: fixed;
+    left: 90%;
+    bottom: 15%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
 
 /*────────────────── 
        footer
@@ -422,6 +482,8 @@ footer {
     width: 100%;
     height: 10%;
     background-color: var(--main-header-background);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
 }
 
 .copyright {
@@ -429,7 +491,8 @@ footer {
     font-size: 1.2rem;
     line-height: 40px;
     text-align: center;
-
+    font-weight: 20%;
+    font-family: var(--main-font-family);
 }
 
 .copyright a {
@@ -456,28 +519,6 @@ hr {
     margin-inline-start: auto;
     margin-inline-end: auto;
 }
-
-
-/*────────────────── 
-     Scrollbar
-──────────────────*/
-
-::-webkit-Scrollbar {
-    width: 5px;
-    background: rgba(5, 5, 5, 1);
-}
-
-::-webkit-Scrollbar-thumb {
-    border-radius: 10px;
-    background: var(--main-decor-color);
-    box-shadow: inset 0 0 20px var(--main-decor-color);
-}
-
-::-webkit-Scrollbar-track {
-    margin-top: 80px;
-    border-radius: 10px;
-}
-
 
 /*────────────────── 
      hamburger
